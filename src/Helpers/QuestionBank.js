@@ -1,26 +1,26 @@
 export const Questions = [
   {
-    prompt: "What is 1+3?",
-    optionA: "24",
-    optionB: "21",
-    optionC: "4",
-    optionD: "2",
-    answer: "C"
+    prompt: "How many muscles cats have that control their ears?",
+    optionA: "10",
+    optionB: "15",
+    optionC: "20",
+    optionD: "30",
+    answer: "D"
   },
   {
-    prompt: "Which is a streaming platform?",
-    optionA: "Twitter",
-    optionB: "Twitch",
-    optionC: "Google",
-    optionD: "Robinhood",
-    answer: "B"
+    prompt: "How much does cat sleep in their lives?",
+    optionA: "50%",
+    optionB: "60%",
+    optionC: "66%",
+    optionD: "70%",
+    answer: "D"
   },
   {
-    prompt: "Best tech youtube channel?",
-    optionA: "PedroTech",
-    optionB: "Dev Ed",
-    optionC: "Fireship",
-    optionD: "TechWithTim",
+    prompt: "Can kitties rotate their ears 180 degrees?",
+    optionA: "Yes",
+    optionB: "No",
+    optionC: "Sometimes",
+    optionD: "Only when they are mad",
     answer: "A"
   }
 ]

@@ -1,6 +1,7 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import {QuizContext} from '../Helpers/Contexts';
 import {Questions} from '../Helpers/QuestionBank';
+
 
 export default function Quiz(){
   const {score, setScore, setGameState} = useContext(QuizContext)
@@ -10,7 +11,6 @@ export default function Quiz(){
     if(Questions[currQuestion].answer === optionChosen){
       setScore(score + 1)
     }
-    alert(score)
     setCurrQuestion(currQuestion+1)
   }
   const finishQuiz = () => {
@@ -21,7 +21,7 @@ export default function Quiz(){
   }
   return (
     <div className="quiz">
-      <h1>{Questions[currQuestion].prompt}</h1>
+      <h3>{Questions[currQuestion].prompt}</h3>
       <div className="options">
         <button onClick={()=>setOptionChosen('A')}>{Questions[currQuestion].optionA} </button>
         <button onClick={()=>setOptionChosen('B')}>{Questions[currQuestion].optionB} </button>
